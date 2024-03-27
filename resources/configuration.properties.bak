@@ -1,0 +1,143 @@
+paramCloseOnEnd = 1
+paramDebug = 1
+
+# language code, office code, transaction identifier
+paramInterfaceLanguage = es
+paramIPO = CU
+paramTransactionIdentifier = TMview Cuba
+paramInternationalApplicationCode = G
+
+# paramExecutionContext = (FULL or DIFF)
+paramExecutionContext = DIFF
+paramSqlFull = full-get-db-backlog.sql
+paramSqlDiffNewFilings = diff-get-daily-new-filings.sql
+paramSqlDiffLogChanges = diff-get-daily-log-changes.sql
+paramSqlDiffStatusChanges = diff-get-daily-status-changes.sql
+paramSqlDiffGetTrademarksPublishedInLastJournal = 
+paramSqlDiffGetUserdocsPublishedInLastJournal = 
+
+# paramFTPRetryCount: to retry every 5 seconds (5 times)
+paramFTPRetryCount = 100
+
+#introduce country codes that are invalid according to TMview schema: SP,ZC,ZD,VM,ZB,RH,GC,CT,ZB,QZ
+paramInvalidCountryCodes = 
+paramInvalidPriorityCountryCodes = 
+
+#ignore: 0=false, 1=true
+paramDeleteGeneratedImages = 0
+paramDeleteGeneratedXml = 0
+paramSaveImagesToDisc = 0
+paramFtpIgnore = 1
+paramLocalFolderFtp = C:/EUIPO/ADEM_OUTPUT/TM_ROOT/FTP
+paramLocalFolderImagesCTI = C:/EUIPO/ADEM_OUTPUT/TM_ROOT/images
+paramLocalPrepare_TM_CESTO = D:/devel/sp-cesto/conf/PREPARE_TRADEMARKS_CESTO/ORIGINAL
+paramLocalPrepare_IMG_CESTO = D:/devel/sp-cesto/conf/PREPARE_IMAGES_CESTO/ORIGINAL
+paramLocalFolderLogging = C:/EUIPO/ADEM_OUTPUT/TM_ROOT/logging
+#paramIgnoreThumbnails = 0
+#preferredImageSize value in pixels (it is a mandatory value)
+paramPreferredImageSize = 350
+
+# KindMark: check also is APPL_SUBTYP
+#1 Individual
+#2 Collective
+#3 Certificate
+#4 Guarantee
+
+paramMapIpasApplToKindMark1 = M,1,2,3,4,5,6
+paramMapIpasApplToKindMark2 = C
+paramMapIpasApplToKindMark3 = 
+paramMapIpasApplToKindMark4 =
+
+#1 Logotype
+#2 Commercial name
+#3 Title of establishment
+#4 Slogan
+#5 Domestic
+#6 Foreign
+#7 Hallmark
+#8 6ter mark
+#9 Geographical indication
+#10 Appellation of origin
+#11 Well-known mark
+
+
+paramMapIpasApplToIPRKind1 = M,C,1,2,3,4,5,6
+paramMapIpasApplToIPRKind2 = E
+paramMapIpasApplToIPRKind3 = N
+paramMapIpasApplToIPRKind4 = R
+paramMapIpasApplToIPRKind5 = L
+paramMapIpasApplToIPRKind6 =
+paramMapIpasApplToIPRKind7 =
+paramMapIpasApplToIPRKind8 =
+paramMapIpasApplToIPRKind9 =
+paramMapIpasApplToIPRKind10 = 
+paramMapIpasApplToIPRKind11 = D,U
+paramMapIpasApplToIPRKind12 =
+
+#
+# paramExtractIpasActionTypes:  IPAS actions type codes published in journal (main work flow)
+# paramExtractIpasUserdocTypes: IPAS user document type codes published in journal 
+# paramExtractIpasUserdocTypesSubActionTypes: IPAS sub action types for specific user documents (sub work flow)
+
+#paramExtractUnpublishedTrademarks = 1
+#ignore: 0=false, 1=true
+paramGetPublicationsAndRecords = 1
+paramExtractIpasActionTypes = 173,220,308,363,305,364,213,425,094,064,307,362,261,224,046,309,359,306,360,390,063,017,160,101,104,174,221,318,310,222,289,311,319,313,312,223,317,315,290,316,323,325,082,080,081,095,417,114,096,098,108,097,110,105,109,106,324,426,054,062
+paramExtractIpasUserdocTypes =
+paramExtractIpasUserdocTypesSubActionTypes =
+#paramExtractIpasUserdocTypes = CAD,CADO,CAN,CANO,CDO,CES,CNO,CRE,DEM,DEM9,ERR,FUS,LIC,LICC,MOD,NUL,NULO,RDE,REC,REN,RNU,TRA,MRRP,DEMADM1,DEMSENT,AUTO,SEN2,SEN1,DEMADN2,DEMSEN2,CASOPO,CASSOL
+#paramExtractIpasUserdocTypesSubActionTypes = 070,071,072,073,074,080,082,087,089,094,095,096,097,100,101,102,103,104,106,108,110,113,118,119,160,168,173,174,209,213,220,221,222,223,224,230,242,245,246,256,257,259,260,261,262,285,290,298,310,312,313,315,316,319,323,325,361,367,390
+paramMapIpasRecordsAndPublications = 173:Decision of partial grant,220:Decision of partial grant,308:Decision of partial grant,363:Decision of partial grant,305:Decision of partial grant,364:Decision of partial grant,213:Application publication,425:Registration,417:Registration,064:Registration,307:Registration,362:Registration,261:Refusal,224:Refusal,046:Refusal,309:Refusal,359:Refusal,306:Refusal,360:Refusal,390:Abandonment of application,063:Abandonment of application,017:Abandonment of application,160:Abandonment of record,101:Renunciation,104:Renunciation,174:Revocation,221:Appeal decision,318:Appeal decision,310:Appeal decision,222:Appeal decision,289:Appeal decision,311:Appeal decision,319:Appeal decision,313:Appeal decision,312:Appeal decision,223:Appeal decision,317:Appeal decision,315:Appeal decision,290:Appeal decision,316:Appeal decision,323:Decision of re-establishment of right,325:Decision of re-establishment of right,082:Expiration due to lack of use,080:Nullity,081:Cancellation,094:Record refusal,095:Record refusal,417:Record refusal,114:Record refusal,096:Record refusal,098:Record refusal,108:Record refusal,097:Record refusal,110:Record refusal,105:Record refusal,109:Record refusal,106:Record refusal,324:Record refusal,426:Record refusal,054:Registration certificate,062:Expiration due to end of protection,CAD:Filing of request of expiration due to lack of use,CADO:Filing of request of expiration due to lack of use,CAN:Filing of request of cancellation,CANO:Filing of request of cancellation,CDO:Change of address of applicant/owner,CES:Transfer,TRA:Transfer,CNO:Change of name of applicant/owner,CRE:Change of representative,DEM:Judicial actions,DEM9:Judicial actions,ERR:Correction of errors,FUS:Merger,LIC:Licence,LICC:Licence Cancellation,MOD:Goods and services limitation,NUL:Filing of nullity request,NULO:Filing of nullity request,RDE:Request of re-establishment of right,REC:Appeal filed,REN:Renewal,RNU:Filing of renunciation,MRRP:Answer to temporary refusal,DEMADM1:Judicial actions,DEMSENT:Judicial actions,DEMADN2:Judicial actions,DEMSEN2:Judicial actions,CASOPO:Judicial actions,CASSOL:Judicial actions,AUTO:Court judgments,SEN1:Court judgments,SEN2:Court judgments
+#paramMapIpasRecordsAndPublications = 173:Decision of partial grant,220:Decision of partial grant,308:Decision of partial grant,363:Decision of partial grant,305:Decision of partial grant,364:Decision of partial grant,213:Application publication,425:Registration,417:Registration,064:Registration,307:Registration,362:Registration,261:Refusal,224:Refusal,046:Refusal,309:Refusal,359:Refusal,306:Refusal,360:Refusal,390:Abandonment of application,063:Abandonment of application,017:Abandonment of application,160:Abandonment of record,101:Renunciation,104:Renunciation,174:Revocation,221:Appeal decision,318:Appeal decision,310:Appeal decision,222:Appeal decision,289:Appeal decision,311:Appeal decision,319:Appeal decision,313:Appeal decision,312:Appeal decision,223:Appeal decision,317:Appeal decision,315:Appeal decision,290:Appeal decision,316:Appeal decision,323:Decision of re-establishment of right,325:Decision of re-establishment of right,082:Expiration due to lack of use,080:Nullity,081:Cancellation,094:Record refusal,095:Record refusal,417:Record refusal,114:Record refusal,096:Record refusal,098:Record refusal,108:Record refusal,097:Record refusal,110:Record refusal,105:Record refusal,109:Record refusal,106:Record refusal,324:Record refusal,426:Record refusal,054:Registration certificate,062:Expiration due to end of protection
+paramIgnoreIpasApplTypes = 
+
+
+#  1. Application filed
+#  2. Application published
+#  3. Application opposed
+#  4. Application refused
+#  5. Application withdrawn
+#  6. Registered
+#  7. Appeal pending
+#  8. Registration cancellation pending
+#  9. Registration cancelled
+# 10. Registration surrendered
+# 11. Expired
+# 12. Ended
+
+paramMapIpasStatusToTMviewStatus1 = 001,002,003,012,013,069,082,144,145,INI,152,153,221,222,203,MIGR
+paramMapIpasStatusToTMviewStatus2 = 083,201,014,015,154,036,037,045,016,204,024,028,029,030,032,033,075,077,084,085,094,096,128,129,149,155,158,159,161,181,182,185,162,163,183,186,180,197,198,199,184,035,098,034,100
+paramMapIpasStatusToTMviewStatus3 = 147,017,018,019,020,021,215,076,202,156,157
+paramMapIpasStatusToTMviewStatus4 = 097,200,MADN
+paramMapIpasStatusToTMviewStatus5 = 179,095,226
+paramMapIpasStatusToTMviewStatus6 = 038,195,043,042,MADR,194,232,233,234
+paramMapIpasStatusToTMviewStatus7 = 
+paramMapIpasStatusToTMviewStatus8 = 209,210,211
+paramMapIpasStatusToTMviewStatus9 = 039,040,041,225,227,228
+paramMapIpasStatusToTMviewStatus10 = 179
+paramMapIpasStatusToTMviewStatus11 = 044, MADN
+paramMapIpasStatusToTMviewStatus12 = 
+
+
+# FTP ACCOUNT DETAILS
+# to use FTP secure change the value to 0, to use plain FTP use 1, to use proxy 2
+paramFtpSecure = 2
+
+paramFtpServer1 = ftp.tmdn.org
+paramFtpUser1 = IPO_CUftpusr
+paramFtpPassword1 = 8ptBwlbc
+paramFtpFolder1 = ADEM/test
+paramFtpFolderImages1 = ADEM/test
+
+paramFtpServer2 = 
+paramFtpUser2 = 
+paramFtpPassword2 = 
+paramFtpFolder2 = 
+paramFtpFolderImages2 = 
+
+paramProxyHost = 192.168.1.2
+paramProxyPort = 3128
+paramProxyUsername = marilin
+paramProxyPassword = Lechuga2022*
+
+ 
