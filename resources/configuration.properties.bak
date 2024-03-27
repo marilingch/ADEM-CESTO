@@ -138,6 +138,6 @@ paramFtpFolderImages2 =
 paramProxyHost = 192.168.1.2
 paramProxyPort = 3128
 paramProxyUsername = marilin
-paramProxyPassword = Lechuga2022*
+paramProxyPassword = Ocpi2024*
 
- 
+#https://extranet.who.int/tools/inn_global_data_hub/INN_Hub.php?INN_Hub_XML=%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22+standalone%3D%22yes%22%3F%3E%3CINN_Hub_Root+INN_Client_ID%3D%2216%22+INN_Timestamp%3D%222021-04-28T11%3A08%3A16.233%2B01%3A00%22+INN_Query_Token%3D%22f7489faa6d1416b6c58ded8b990aef3f%22+INN_Query_Type%3D%22HTML%22%3E%3CINN_Hub_Query+Logic_Op%3D%22MAIN%22%3E%3CINN_Query_Content+WHO_Lang%3D%22English%22%3E(^|+)parace%3C%2FINN_Query_Content%3E%3C%2FINN_Hub_Query%3E%3CINN_Hub_Query+Logic_Op%3D%22OR%22%3E%3CINN_Query_Content+WHO_Lang%3D%22French%22%3E(^|+)parace%3C%2FINN_Query_Content%3E%3C%2FINN_Hub_Query%3E%3CINN_Hub_Query+Logic_Op%3D%22OR%22%3E%3CINN_Query_Content+WHO_Lang%3D%22Spanish%22%3E(^|+)parace%3C%2FINN_Query_Content%3E%3C%2FINN_Hub_Query%3E%3C%2FINN_Hub_Root%3E
